@@ -35,42 +35,36 @@
   # or
 $ yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^6
 ```
-ثانيا :بعد تثبيت المكتبة  نقوم بإضافتها إلى المشروع في ملف `index.tsx` بإستيراد  `ChakraProvider`من المكتبة: 
+ثانيا :بعد تثبيت المكتبة  نقوم بإضافتها إلى المشروع في ملف `main.tsx` بإستيراد  `ChakraProvider`من المكتبة: 
 
 ```js
-//index.tsx
+//main.tsx
+import { ChakraProvider } from '@chakra-ui/react'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import './index.css'
 
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-import { ChakraProvider } from '@chakra-ui/react';
 ```
 
 ثالثا : تغليف المشروع بـ `<ChakraProvider>` و `</ChakraProvider>`  : تستخدم ChakraProvider في Chakra UI لتوفير سمه وأنماط مخصصة لجميع المكونات داخل التطبيق.
  يعمل العنصر ChakraProvider كمضيف للتطبيق بأكمله، ويسمح لك بتكوين موضوع والأنماط لتطبيقك في مكان واحد.
 
 ```js
-//index.tsx
+//main.tsx
+import { ChakraProvider } from '@chakra-ui/react'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import './index.css'
 
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { ChakraProvider } from '@chakra-ui/react';
-
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <ChakraProvider>
-    <App />
+  <App />
   </ChakraProvider>
 
-);
+)
 
-reportWebVitals();
 ```
 
 ## العناصر / Components :
