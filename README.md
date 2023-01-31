@@ -143,8 +143,11 @@ const data = {
 ```
 نلاحظ أيضا انه قمنا بإستعمال مجموعة من `props` مع كلنا من `Box`,`Image`و`Text` .
 
-حيث يكون المثال السابق كالتالي:
-![chakraui-img01](https://raw.githubusercontent.com/Tuwaiq-Academy-Training/Chakra-ui-Lesson/main/chakra-ui-img01.png)
+حيث يكون المثال السابق كالتالي:   
+
+
+   
+![chakraui-img01](https://raw.githubusercontent.com/Tuwaiq-Academy-Training/Chakra-ui-Lesson/main/imges/chakra-ui-img01.png)
 
 
    
@@ -282,15 +285,18 @@ export default function App() {
   );
 };
 ```
-ليكون ناتج الكود السابق في الحجم الكامل عند عرض `lg` :
-![chakra-ui-img02](https://raw.githubusercontent.com/Tuwaiq-Academy-Training/Chakra-ui-Lesson/main/chakra-ui-img02.png)   
+ليكون ناتج الكود السابق في الحجم الكامل عند عرض `lg` :   
+   
+   
+![chakra-ui-img02](https://raw.githubusercontent.com/Tuwaiq-Academy-Training/Chakra-ui-Lesson/main/imges/chakra-ui-img02.png)   
 
 
    
 نلاحظ انه قام بقسيم الى ثلاث Hعمده , ومهما زاد عرض الشاشه يضل توزيع العناصر نفسه .
 
-والان نقلص العرض لنصل الى نقطة التحول الاولى `md` لتكون النتيجة :
-![chakra-ui-img03](https://lh3.googleusercontent.com/u/0/drive-viewer/AFDK6gMqex22A-FMxDoWYVI55YXofP230H7VOYuKIAZAP7uWJWatrJTlDlwwSMiwGLSMYPKjNC3ONzn4zpHzyxJUwkeYv0pk=w969-h657)
+والان نقلص العرض لنصل الى نقطة التحول الاولى `md` لتكون النتيجة :   
+   
+![chakra-ui-img03](https://raw.githubusercontent.com/Tuwaiq-Academy-Training/Chakra-ui-Lesson/main/imges/chakra-ui-img03.png)
 نلاحظ ان التقسيم تغير  الى عمودين ولكن لا تزل العناصر تحتفظ بخصائصها .
 
 عند الوصول الى الحد الأدنى `base` يقل التقسيم الى صف واحد :   
