@@ -140,9 +140,14 @@ const data = {
                   
 );
 };
-``` 
+```
+نلاحظ أيضا انه قمنا بإستعمال مجموعة من `props` مع كلنا من `Box`,`Image`و`Text` .
+
 حيث يكون المثال السابق كالتالي:
-![chakraui-img01](https://lh3.googleusercontent.com/u/0/drive-viewer/AFDK6gO-ZCU0WD8HMm3nRD5MFTL9DP92wbfgq4TsWemRWlRySmRHw7NronOwWMNNdZOCiHoahS8XoVtNKOsww47Y3tmfhXtT=w1366-h657)
+![chakraui-img01](https://raw.githubusercontent.com/Tuwaiq-Academy-Training/Chakra-ui-Lesson/main/chakra-ui-img01.png)
+
+
+   
 يجب أولا أن نتأكد من إستدعاء العناصر المستخدمة من مكتبة `Chakara` :
  ```js
  //App.tsx
@@ -155,21 +160,20 @@ Image,
 
 ```
 
-نلاحظ أيضا Hنه قمنا بإستعمال مجموعة من `props` مع كلنا من `Box`,`Image`و`Text` :
 
 ### خصائص `Box` :
 ```js
   <Box maxW='sm' borderWidth='1px' borderRadius='lg' m="auto" mt="20px" >
       
 ```
- * #### ـ`maxW`= maxWidth: يحدد الحد الأقصى لعرض العنصر وتحدد قيمتة بـ وحدات الحجم `px,rem,em,...` , أو بالقيم الجاهزة من مكتبة `Chakra` حيث يكون `lx`للكبير و `sm`للمتوسط و `xs`للصغير . 
-* #### ـ`borderWidth` : يحدد عرض حدود العنصر .
-#### ـ`borderRadius` : يحدد مقدار انحنى زوايا العنصر  , حيث يحول من أطراف حادة إلى إطراف منحنية ويمكن تحديد قمتها من خلال `sm, md, lg`.
-#### ـ`m` =  Margin :مماثلة للموجودة في `CSS` وهي تحدد المسافة الفاصلة بين العنصر و الحدود الأخرى المحيطة به, هنا إستعملنا قيمة `auot` .
-#### ـ`mt` = Margin Top :مشابهة للسابقتها لكنها تحدد القيمة بين العنصر و الحد ال’على منه, و إستعملنا قمتة `20px` .
+  ـ `maxW`= maxWidth: يحدد الحد الأقصى لعرض العنصر وتحدد قيمتة بـ وحدات الحجم `px,rem,em,...` , أو بالقيم الجاهزة من مكتبة `Chakra` حيث يكون `lx`للكبير و `sm`للمتوسط و `xs`للصغير .    
+ ـ borderWidth : يحدد عرض حدود العنصر .   
+ ـ borderRadius : يحدد مقدار انحنى زوايا العنصر  , حيث يحول من أطراف حادة إلى إطراف منحنية ويمكن تحديد قمتها من خلال `sm, md, lg`.   
+ ـ `m` =  Margin :مماثلة للموجودة في `CSS` وهي تحدد المسافة الفاصلة بين العنصر و الحدود الأخرى المحيطة به, هنا إستعملنا قيمة `auto` .      
+ ـ `mt` = Margin Top :مشابهة للسابقتها لكنها تحدد القيمة بين العنصر و الحد ال’على منه, و إستعملنا قمتة `20px` .   
 
 
-### ـText 
+### ـText : 
 ### ـ`Text`: تحل محل paragraphs `p` حيث يمكن كتابة أي نـص داخلها وعرضها في الواجهة 
 ### خصائص `Text` :
 بعد إستدعاء `Text` من مكتبة `Chakra` نستعملها كالتالي :
@@ -190,7 +194,7 @@ Image,
           dir="rtl"
           fontWeight='semibold'
         >
-          eمعسكر تطوير مواقع الويب
+          معسكر تطوير مواقع الويب
         </Text>
 ```
 
@@ -279,15 +283,21 @@ export default function App() {
 };
 ```
 ليكون ناتج الكود السابق في الحجم الكامل عند عرض `lg` :
-![chakra-ui-img02](https://lh3.googleusercontent.com/u/0/drive-viewer/AFDK6gMC530VplxkiocgYA_HEaWRKvsaJxf0V20fULTqOx5IP84vMTiUnGW3a0AOs4Fd4p8Dh7WqF8ukrOgVwQ1AyMCMn_SFgg=w1366-h657)
+![chakra-ui-img02](https://raw.githubusercontent.com/Tuwaiq-Academy-Training/Chakra-ui-Lesson/main/chakra-ui-img02.png)   
+
+
+   
 نلاحظ انه قام بقسيم الى ثلاث Hعمده , ومهما زاد عرض الشاشه يضل توزيع العناصر نفسه .
 
 والان نقلص العرض لنصل الى نقطة التحول الاولى `md` لتكون النتيجة :
 ![chakra-ui-img03](https://lh3.googleusercontent.com/u/0/drive-viewer/AFDK6gMqex22A-FMxDoWYVI55YXofP230H7VOYuKIAZAP7uWJWatrJTlDlwwSMiwGLSMYPKjNC3ONzn4zpHzyxJUwkeYv0pk=w969-h657)
 نلاحظ ان التقسيم تغير  الى عمودين ولكن لا تزل العناصر تحتفظ بخصائصها .
 
-عند الوصول الى الحد الأدنى `base` يقل التقسيم الى صف واحد : 
-![chakra-ui-img04](https://lh3.googleusercontent.com/u/0/drive-viewer/AFDK6gMIbrfEJHoDFxCMrXc0o-6BrYvKMHlGReKfsuVtHo-xqyNeWNmIUTqBYUMdPvRVASIJr30K86PlQ3lcULd1HGhfd5OHVQ=w969-h657)
+عند الوصول الى الحد الأدنى `base` يقل التقسيم الى صف واحد :   
+
+
+   
+![chakra-ui-img04](https://raw.githubusercontent.com/Tuwaiq-Academy-Training/Chakra-ui-Lesson/main/chakra-ui-img03.png)
 
 
 
