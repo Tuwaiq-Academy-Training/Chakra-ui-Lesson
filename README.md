@@ -26,7 +26,7 @@
   * ـ Responsive : جميع العناصر في مكتبة ChakraUI ـ (Responsive) تتناسب مع مختلف أحجام شاشات العرض.
   * دعم كامل  TypeSeript . 
   * مكتبة جديدة و في تحديث مستمر . 
-  * إختصارلللوقت باستعمال عناصر جاهزةوتعديلها حسب الحاجة . 
+  * إختصار للوقت باستعمال عناصر جاهزةوتعديلها حسب الحاجة . 
   
 # الأستخدام : 
 أولا : لإضافة مكتبة ChakraUI للمشروع نحتاج أن نقوم بتشغيل احد الأوامر التاليه 
@@ -46,9 +46,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { ChakraProvider } from '@chakra-ui/react';
+```
 
-ثالثا : تغليف المشروع بـ `<ChakraProvider>` و `</ChakraProvider>`  :
-
+ثالثا : تغليف المشروع بـ `<ChakraProvider>` و `</ChakraProvider>`  : تستخدم ChakraProvider في Chakra UI لتوفير سمه وأنماط مخصصة لجميع المكونات داخل التطبيق.
+ يعمل العنصر ChakraProvider كمضيف للتطبيق بأكمله، ويسمح لك بتكوين موضوع والأنماط لتطبيقك في مكان واحد.
 
 ```js
 //index.tsx
